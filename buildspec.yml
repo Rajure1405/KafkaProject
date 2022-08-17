@@ -24,7 +24,7 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"spring-boot-aws","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json
-  artifacts:
-    files:
-      - imagedefinitions.json
-      - target/spring-boot-aws.jar
+artifacts:
+  files:
+    - imagedefinitions.json
+    - target/spring-boot-aws.jar
